@@ -15,19 +15,21 @@
                     @endif
                     @if(count($fixtures))
                     @foreach($fixtures as $fixture)
-                    <table class="table table-striped">
-                        <h4>Week {{$loop->iteration}}</h4>
-                        <tr>
-                            <th>Team A</th>
-                            <th>Team B</th>
-                        </tr>
+                    <table style="width: 100% !important" class="table table-striped">
+                        <tbody style="width: 100% !important">
+                            <h4>Week {{$loop->iteration}}</h4>
+                            <tr>
+                                <th style="width: 50% !important">Team A</th>
+                                <th style="width: 50% !important">Team B</th>
+                            </tr>
 
-                        @foreach($fixture as $match)
-                        <tr>
-                            <td>{{$match->teamA}}</td>
-                            <td>{{$match->teamB}}</td>
-                        </tr>
-                        @endforeach
+                            @foreach($fixture as $match)
+                            <tr style="width: 50% !important">
+                                <td>{{$match->teamA}}<span style="float: right">[{{$match->teamAGoals}}]</span></td>
+                                <td>{{$match->teamB}}<span style="float: right">[{{$match->teamAGoals}}]</span></td>
+                            </tr>
+                            @endforeach
+                        </tbody>
                     </table>
                     <hr>
                     @endforeach
