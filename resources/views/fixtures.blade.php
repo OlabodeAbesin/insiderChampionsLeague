@@ -16,7 +16,7 @@
                     @if(count($fixtures))
                     @foreach($fixtures as $fixture)
                     <table class="table table-striped">
-
+                        <h4>Week {{$loop->iteration}}</h4>
                         <tr>
                             <th>Team A</th>
                             <th>Team B</th>
