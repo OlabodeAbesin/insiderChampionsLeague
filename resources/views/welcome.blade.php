@@ -82,7 +82,7 @@
             </div> -->
 
             <div class="links">
-                <a href="{{ url('/setupData') }}">Setup Insider League</a>
+                <a href="{{ url('/setupData') }}"><button>Click here to Play</button></a>
             </div>
         </div>
     </div>
