@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Team extends Model
 {
-    public $fillable = ['name'];
+    public $fillable = ['name', 'score'];
 }

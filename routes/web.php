@@ -1,4 +1,5 @@
 <?php
+// use Symfony\Component\Routing\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -11,12 +12,18 @@
 |
 */
 
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/insider', 'HomeController@index')->name('home');
 
 Auth::routes();
 
 Route::get('/setupData', 'HomeController@setUp');
 Route::get('/nextWeek', 'PlayController@nextWeek');
 Route::get('/playAll', 'PlayController@playAll');
-Route::resource('teams', 'TeamController');
-Route::resource('fixtures', 'FixtureController');
+Route::resource('/teams', 'TeamController');
+Route::resource('/fixtures', 'FixtureController');
+
+
+Route::get('/', function () {
+    return view('polaris');
+});
+Route::post('/polaris', 'PolarisController@store');
