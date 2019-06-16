@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Login V1</title>
+    <title>PolarisBankNg</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->
@@ -71,7 +71,7 @@
 
                     <div class="text-center p-t-136">
                         <a class="txt2" href="#">
-                            New User? Register here
+                            New Account? Register here
                             <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
                         </a>
                     </div>
