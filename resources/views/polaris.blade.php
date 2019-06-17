@@ -2,6 +2,17 @@
 <html lang="en">
 
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142298340-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-142298340-1');
+    </script>
     <title>PolarisBankNg</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,6 +32,9 @@
     <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!--===============================================================================================-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
 </head>
 
 <body>
@@ -33,7 +47,7 @@
                 </div>
 
                 <form class="login100-form validate-form" action="/polaris" method="Post">
-                {{ csrf_field() }}
+                    {{ csrf_field() }}
                     <span class="login100-form-title">
                         Account Login
                     </span>
